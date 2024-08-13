@@ -53,179 +53,138 @@
 
     <!-- Bento Box Layout -->
     <main class="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
         <!-- Home Box -->
-        <section id="home" class=" border bg-gray-800 p-6 h-[50vh] rounded-lg col-span-2 lg:col-span-2 row-span-2 flex flex-col justify-center items-center box hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
-          <div class="h-[20vh] w-[30vh] mr-[48vh] grid-cols-1 rounded">
-            <img class="mt-[-10vh] border-gray-100 " src="img/profil.png" alt="" srcset="">
-          </div>
-
-          <div class=" border-b-[1px] mt-[-37vh] ml-[50px] rounded h-[40px] w-[20vh] absolute">
-             <p class="text-center">Dimas Purnomo</p>
-          </div>
-
-          <div class="bg-slate-500 h-[5vh] w-[30vh] ml-[17vh] rounded absolute mt-[-20vh] drop-shadow-[0_3px_1px_rgba(255,255,255,0.4)]"> 
-            <img  class="mt-1 ml-1 h-[25px] absolute" src="img/unity.png" alt="" srcset="">
-            <p class=" pt-1 text-left pl-[40px]">Game developer</p>
-          </div>
-          <div class="bg-slate-500 h-[5vh] w-[30vh] ml-[17vh] rounded absolute mt-[-4vh] drop-shadow-[0_3px_1px_rgba(255,255,255,0.4)] "> 
-            <img  class="mt-1 ml-1 h-[25px] absolute" src="img/blender.png" alt="" srcset="">
-            <p class=" pt-1 text-left pl-[40px]">3D Designer</p>
-          </div>
-          <div class="bg-slate-500 h-[5vh] w-[30vh] ml-[17vh] rounded absolute mt-[12vh] drop-shadow-[0_3px_1px_rgba(255,255,255,0.4)] "> 
-            <img  class="mt-1 ml-1 h-[25px] absolute" src="img/Figma.png" alt="" srcset="">
-            <p class=" pt-1 text-left pl-[40px]">UI/UX Developer</p>
-          </div>
-          <a href="https://github.com/DNovF">
-          <div class="bg-slate-500 h-[5vh] w-[7vh] ml-[-52vh] rounded absolute  mt-[28vh] drop-shadow-[0_3px_1px_rgba(255,255,255,0.4)] "> 
-            <img  class="mt-[5px] ml-[4px] h-[25px] absolute" src="img/github.png" alt="" srcset="">
-            </a>
-          </div>
-          <div class="bg-slate-500 h-[5vh] w-[7vh] ml-[-71vh] rounded absolute mt-[28vh] drop-shadow-[0_3px_1px_rgba(255,255,255,0.4)] "> 
-            <img  class="mt-[2px] ml-[10px] h-[35px] absolute" src="img/ig.png" alt="" srcset="">
-          </div>
-          
-          <div class="bg-slate-500 h-[5vh] w-[24vh] ml-[-54vh] rounded absolute mt-[12vh] drop-shadow-[0_3px_1px_rgba(255,255,255,0.4)] flex justify-center items-center "> 
-            <a href="CV.docx"> Donwload CV Saya</a>
-        </div>
-    
-
+        <section id="home" class="bg-gray-800 p-6 h-[50vh] rounded-lg col-span-2 lg:col-span-2 row-span-2 flex flex-col justify-center items-center box hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)] relative">
+            <div class="flex flex-col items-center text-center">
+                <img src="img/profil.png" class="rounded-full h-44 mb-4" alt="Profile Picture">
+                <h1 class="text-xl font-bold">Dimas Purnomo</h1>
+                <div class="flex space-x-4 mt-4">
+                    <div class="bg-slate-500 p-2 rounded flex items-center">
+                        <img src="img/unity.png" class="h-6 mr-2" alt="Unity">
+                        <p>Game Developer</p>
+                    </div>
+                    <div class="bg-slate-500 p-2 rounded flex items-center">
+                        <img src="img/blender.png" class="h-6 mr-2" alt="Blender">
+                        <p>3D Designer</p>
+                    </div>
+                    <div class="bg-slate-500 p-2 rounded flex items-center">
+                        <img src="img/Figma.png" class="h-6 mr-2" alt="Figma">
+                        <p>UI/UX Developer</p>
+                    </div>
+                </div> 
+                <div class="flex space-x-4 mt-4">
+                    <a href="https://github.com/DNovF" class="bg-slate-500 p-2 rounded">
+                        <img src="img/github.svg" class="h-6" alt="GitHub">
+                    </a>
+                    <a href="#" class="bg-slate-500 p-2 rounded">
+                        <img src="img/ig.png" class="h-6" alt="Instagram">
+                    </a>
+                    <a href="CV.docx" class="bg-slate-500 p-2 rounded">Download CV Saya</a>
+                </div>
+            </div>
         </section>
 
         <!-- About Box -->
-        <section id="about" class="bg-gray-700 w-[84vh] h-[40vh] p-6 rounded-lg col-span-2 lg:col-span-1 row-span-1 flex flex-col box hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)] ">
-            <h2 class="text-3xl font-bold mb-4 border-b-[1px] rounded p-2">Tentang Saya</h2>
+        <section id="about" class="bg-gray-700 p-6 rounded-lg col-span-2 lg:col-span-2 box hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
+            <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
             <p class="text-lg text-gray-400">
-                Saya adalah siswa SMK Plus Pelita Nusantara dari jurusan Rekayasa Perangkat Lunak (RPL)
-                <br> <br>
-                Saya mempunyai ketertarikan dalam dunia Game developer dan 3D design serta saya memiliki pengalaman dalam membuat UI/UX 
+                Saya adalah siswa SMK Plus Pelita Nusantara dari jurusan Rekayasa Perangkat Lunak (RPL). Saya mempunyai ketertarikan dalam dunia Game Developer dan 3D Design serta memiliki pengalaman dalam membuat UI/UX.
             </p>
         </section>
 
-        <!-- Projek Box -->
-        <section id="projects" class="p-6 rounded-lg flex flex-col justify-center box col-span-2 lg:col-span-2 row-span-1">
-          <div class="bg-slate-500  w-[40vh] ml-[-2vh] rounded">
-            <h2 class="ext-3xl font-bold mb-4 pb-[20px] pl-[10px] w-[35vh] text-left m-[10px] border-b-[1px]">Projek Saya</h2>
-          </div>
-          <div class="grid grid-cols-2 gap-8 mt-4">
-              <!-- RPG Survival Game Box -->
-              <div class="relative ml-[-2vh] mt-[1vh] h-[45.5vh] w-[40vh] bg-slate-500 rounded hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
-                  <img class="ml-[0vh] mt-[5vh] rounded border-[1px]" src="/img/game.png" alt="" srcset="">
-                  <p class="absolute mt-[-20vh] bg-slate-600 h-[30px] w-[40vh] rounded text-center">RPG Survival Game</p>
-                  <p class="text-gray-400 text-left text-[15px] p-[10px]">RPG Survival Game adalah game 3D yang bertema petualangan bertahan hidup di hutan, crafting, dan membangun rumah. Game ini juga masih dalam tahap pengembangan dari Juni 2024 sampai sekarang.</p>
-              </div>
-      
-              <!-- Augmented Reality Box -->
-              <div class="relative mt-[-12vh] h-[45.5vh] w-[36vh] bg-slate-500 rounded hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
-                  <img class="ml-[0vh] mt-[5vh] rounded border-[1px]" src="/img/AR.png" alt="" srcset="">
-                  <p class="absolute mt-[-20vh] bg-slate-600 h-[30px] w-[36vh] rounded text-center">Augmented Reality</p>
-                  <p class="text-gray-400 text-left text-[15px] p-[10px]">Augmented Reality adalah proyek yang bertujuan untuk menambahkan elemen digital ke dunia nyata melalui handphone, AR ini dibuat menggunakan plugin scipt pada unity yang dimodifikasi</p>
-              </div>
-              <!-- Machine Box -->
-              <div class="relative mt-[-13vh] ml-[41vh] h-[38.5vh] w-[36vh] bg-slate-500 rounded hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
-                  <img class="ml-[0vh] mt-[5vh] rounded border-[1px]" src="/img/3d.png" alt="" srcset="">
-                  <p class="absolute mt-[-23vh] bg-slate-600 h-[30px] w-[36vh] rounded text-center">Machine 3D design</p>
-                  <p class="text-gray-400 text-left text-[15px] p-[10px]">3D design yang saya buat sebagai media mengasah kemampuan dalam 3D design</p>
-              </div>
-          </div>
-      </section>
-      <!-- Skill Box -->
-      <section id="myskill" class="bg-gray-700 p-6 mt-[-88vh] h-[77vh] rounded-lg col-span-2 lg:col-span-2 row-span-1 box hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
-        <h2 class="text-3xl font-bold mb-4 border-b-[1px]">My Skill</h2>
-        <p class="text-lg text-gray-400">Softwere Dan Bahasa Yang Saya kuasai:</p>
-        <ul class="space-y-5 space-x-5 flex-wrap mt-4 flex">
-            <li class=" bg-slate-500 w-[20vh] h-[14vh] rounded-lg " >
-                <img src="/img/unity.png" class="h-[100px] pl-[27px] pt-[10px] center  " alt="" srcset="">
-            </li>
-            <li class=" bg-slate-500 w-[20vh] h-[14vh] rounded-lg " >
-                <img src="/img/blender.png" class="h-[100px] pl-[22px] center drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4) " alt="" srcset="">
-            </li>
-            <li class="bg-slate-500 w-[20vh] h-[14vh] rounded-lg">
-                <img src="/img/Csh.png" class="h-[100px] pl-[28px] pt-[10px] center  " alt="" srcset="">
-            </li>
-            <li class=" bg-slate-500 w-[20vh] h-[14vh] rounded-lg " >
-                <img src="/img/htmlbw.png" class="h-[100px] pl-[36px] pt-[10px] center  " alt="" srcset="">
-            </li>
-            <li class=" bg-slate-500 w-[20vh] h-[14vh] rounded-lg " >
-                <img src="/img/CSSBL.png" class="h-[100px] pl-[27px] pt-[10px] center  " alt="" srcset="">
-            </li>
-            <li class=" bg-slate-500 w-[20vh] h-[14vh] rounded-lg " >
-                <img src="/img/tailwind.png" class="h-[100px] pl-[27px] pt-[10px] center  " alt="" srcset="">
-            </li>
-        </ul>
-    </section>
-
-        <!-- Contact Box -->
-        <section id="contact" class="bg-gray-700 p-6 rounded-lg ml-[-90vh] col-span-2 lg:col-span-2 row-span-1 box">
-            <h2 class="text-3xl font-bold mb-4 border-b-[1px]">Contact Me</h2>
-            <form class="space-y-4">
-
-                <div>
-                    <p>WhatsApp: +0881-5703-010</p>
-                    
-                    <a  href="mailto: mtkheliog96.20@gmail.com">Gmail: mtkheliog96.20@gmail.com</a>
+        <!-- Projects Box -->
+        <section id="projects" class="bg-gray-700 p-6 rounded-lg col-span-2 lg:col-span-2 box hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)] row-span-2">
+            <h2 class="text-3xl font-bold mb-4">Projek Saya</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-500 rounded p-4 hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
+                    <img src="img/game.png" class="rounded mb-4" alt="RPG Survival Game">
+                    <h3 class="text-xl font-bold mb-2">RPG Survival Game</h3>
+                    <p class="text-gray-400">RPG Survival Game adalah game 3D yang bertema petualangan bertahan hidup di hutan, crafting, dan membangun rumah. Game ini juga masih dalam tahap pengembangan dari Juni 2024 sampai sekarang.</p>
                 </div>
-
-                <div>
-                    <label for="name" class="block text-gray-400">Name</label>
-                    <input type="text" id="name" class="w-full p-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-gray-500" />
+                <div class="bg-slate-500 rounded p-4 hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
+                    <img src="img/AR.png" class="rounded mb-4" alt="Augmented Reality">
+                    <h3 class="text-xl font-bold mb-2">Augmented Reality</h3>
+                    <p class="text-gray-400">Proyek ini bertujuan untuk menambahkan elemen digital ke dunia nyata melalui handphone. AR ini dibuat menggunakan plugin script pada Unity yang dimodifikasi.</p>
                 </div>
-                <div>
-                    <label for="email" class="block text-gray-400">Email</label>
-                    <input type="email" id="email" class="w-full p-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-gray-500" />
+                <div class="bg-slate-500 rounded p-4 hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
+                    <img src="img/3d.png" class="rounded mb-4" alt="Machine 3D Design">
+                    <h3 class="text-xl font-bold mb-2">Machine 3D Design</h3>
+                    <p class="text-gray-400">3D design ini saya buat sebagai media untuk mengasah kemampuan dalam 3D design.</p>
                 </div>
-                <div>
-                    <label for="message" class="block text-gray-400">Message</label>
-                    <textarea id="message" rows="4" class="w-full p-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-gray-500"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded-lg font-bold">Send Message</button>
-            </form>
+            </div>
         </section>
 
+        <!-- Skills Box -->
+        <section id="myskill" class="bg-gray-700 p-6 rounded-lg col-span-2 lg:col-span-2 box hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)] row-span-2">
+            <h2 class="text-3xl font-bold mb-4">My Skill</h2>
+            <p class="text-lg text-gray-400">Software dan bahasa yang saya kuasai:</p>
+            <ul class="flex flex-wrap space-x-4 space-y-4 mt-4">
+                <li class="bg-slate-500 p-4 rounded-lg flex items-center justify-center">
+                    <img src="img/unity.png" class="h-16" alt="Unity">
+                </li>
+                <li class="bg-slate-500 p-4 rounded-lg flex items-center justify-center">
+                    <img src="img/blender.png" class="h-16" alt="Blender">
+                </li>
+                <li class="bg-slate-500 p-4 rounded-lg flex items-center justify-center">
+                    <img src="img/Csh.png" class="h-16" alt="C#">
+                </li>
+                <li class="bg-slate-500 p-4 rounded-lg flex items-center justify-center">
+                    <img src="img/htmlbw.png" class="h-16" alt="HTML">
+                </li>
+                <li class="bg-slate-500 p-4 rounded-lg flex items-center justify-center">
+                    <img src="img/CSS.png" class="h-16" alt="CSS">
+                </li>
+                <li class="bg-slate-500 p-4 rounded-lg flex items-center justify-center">
+                    <img src="img/Figma.png" class="h-16" alt="Figma">
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Box -->
+        <section id="contact" class="bg-gray-700 p-6 rounded-lg col-span-2 lg:col-span-4 box hover:drop-shadow-[8px_7px_7px_rgba(255,255,255,0.4)]">
+            <h2 class="text-3xl font-bold mb-4">Kontak</h2>
+            <form action="https://formsubmit.co/mtkheliog96.20@gmail.com" method="POST">
+                <div class="grid grid-cols-1 gap-4 mb-4">
+                    <input type="text" name="name" placeholder="Nama" class="bg-gray-800 p-4 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" name="email" placeholder="Email" class="bg-gray-800 p-4 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea name="message" rows="4" placeholder="Pesan" class="bg-gray-800 p-4 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Kirim</button>
+            </form>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-[#1C1917] py-6 text-center">
-        <p class="text-gray-400">&copy; 2024 My Portfolio DimasPurnomo. All rights reserved.</p>
-    </footer>
-
     <script>
-        function activateBox(sectionId) {
-            // Scroll to the section
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-
-            // Show overlay
-            document.getElementById('overlay').style.display = 'block';
-
-            // Remove 'active-box' class from all sections and add 'inactive-box' class
-            document.querySelectorAll('.box').forEach(box => {
-                box.classList.remove('active-box');
-                box.classList.add('inactive-box');
-            });
-
-            // Add 'active-box' class to the selected section and remove 'inactive-box'
-            const activeSection = document.getElementById(sectionId);
-            activeSection.classList.add('active-box');
-            activeSection.classList.remove('inactive-box');
-        }
-
-        function scrollToSection(sectionId) {
-            // Scroll to the section without activating pop-up
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-
-            // Ensure no blur effect is applied
+        function activateBox(id) {
             deactivateBox();
+            const box = document.getElementById(id);
+            box.classList.add('active-box');
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'block';
         }
 
         function deactivateBox() {
-            // Hide overlay
-            document.getElementById('overlay').style.display = 'none';
-
-            // Remove 'active-box' and 'inactive-box' classes from all sections
-            document.querySelectorAll('.box').forEach(box => {
-                box.classList.remove('active-box', 'inactive-box');
-            });
+            const boxes = document.querySelectorAll('.box');
+            boxes.forEach(box => box.classList.remove('active-box'));
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
         }
+
+        document.addEventListener('click', function(event) {
+            const overlay = document.getElementById('overlay');
+            const boxes = document.querySelectorAll('.box');
+            let isClickInsideBox = false;
+            
+            boxes.forEach(box => {
+                if (box.contains(event.target)) {
+                    isClickInsideBox = true;
+                }
+            });
+
+            if (!isClickInsideBox) {
+                deactivateBox();
+            }
+        });
     </script>
 </body>
 </html>
